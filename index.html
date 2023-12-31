@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image to PDF Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-cTigz/6wlMKsYjr7PBl/LkTNrWnsHRjI1Em7wnXb13BkrZQoJU0GJvZZaLd7yEYMW/hY9QFZ37U3RPV4zmeM4w==" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+  <style>
+    /* Additional CSS for the footer */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+   .footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Add z-index to ensure it appears above other elements */
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Image to PDF Converter</h1>
+  </header>
+  <div class="container">
+    <input type="file" id="fileInput" multiple>
+    <button style="--clr:#008cba;--hov:#006080;" id="addImageButton">Add Images</button>
+    <button style="--clr:#3e8d75;--hov:#3e8e41;" id="convertButton">Convert to PDF</button>
+    <button style="--clr:#f44336;--hov:#ff6b6b;" id="clearButton">Clear Images</button>
+    <div id="pdfDownloadLink"></div>
+    <div id="imageContainer"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2023 imakshay.in | Designed by Akshay</p>
+  </div>
+</body>
+</html>

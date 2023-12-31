@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imageBox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.deleteButton,
+.rotateButton {
+  background-color: #f44336;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  padding: 0;
+  right: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.rotateButton {
+  right: auto;
+  left: 5px;
+}
+
+/* Add these styles for the rotation icon */
+.rotateButton::before {
+  content: '\f01e'; /* Unicode character for a Font Awesome icon (rotate-right icon) */
+  font-family: 'Font Awesome 5 Free'; /* Font Awesome font family */
+  font-weight: 900; /* Font weight of the icon */
+  font-size: 14px; /* Adjust the font size as needed */
+  display: inline-block;
+}
+
+.deleteButton:hover,
+.rotateButton:hover {
+  background-color: #ff6b6b;
+}
+
+#imageContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between image items */
+  margin-bottom: 60px;
+}
+
+#imageContainer img {
+  max-width: 100%;
+}
+
+#pdfDownloadLink {
+  margin: 20px auto;
+  text-align: center;
+  background: red;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#fileInput {
+  display: none;
+}
+
+button {
+  border: none;
+  background: var(--clr);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px auto;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: var(--hov);
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+  .imageBox {
+    width: calc(100% - 20px);
+  }
+}
