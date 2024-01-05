@@ -13,6 +13,7 @@ Visit the live demo: [Image to PDF Converter Demo](http://imakshay.in/onlineserv
 - Convert images to a single PDF file
 - Download the generated PDF
 - Clear added images for a new conversion
+- Works offline: locally saves data for continued use without internet connectivity
 
 ## Screenshots
 
@@ -26,6 +27,7 @@ Visit the live demo: [Image to PDF Converter Demo](http://imakshay.in/onlineserv
 4. Click the "Convert to PDF" button to convert the added images into a PDF file.
 5. Download the generated PDF using the provided link.
 6. Use the "Clear Images" button to remove added images for a new conversion.
+7. The application also supports offline usage with locally saved data.
 
 ## Developer
 
